@@ -45,5 +45,8 @@ public class HomePage {
 
         System.out.println("Jestem na języku angielskim");
         assert driver.getCurrentUrl().contains("en");
+
+        GoTest goTest = new GoTest(driver);
+        goTest.clickGoButton();
     }
 }
